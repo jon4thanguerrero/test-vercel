@@ -1,0 +1,102 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f3f3f3;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Barra horizontal que va de extremo a extremo */
+.horizontal-bar {
+  background-color: #a81515; /* Color de fondo de la barra */
+  height: 100px; /* Altura de la barra */
+  width: 100%; /* Ancho de la barra que cubre toda la página */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* Evita que la imagen se salga de la barra */
+}
+
+.horizontal-bar img {
+  max-width: 20%; /* Ajusta el tamaño máximo de la imagen */
+  max-height: 100%; /* Ajusta el tamaño máximo de la imagen */
+  object-fit: contain; /* Ajusta cómo se ajusta la imagen dentro del contenedor */
+  border-radius: 50%; /* Hace que la imagen tenga forma circular */
+  overflow: hidden; /* Evita que la imagen se desborde de la barra */
+}
+
+.pokemon-logo {
+  width: 50%;
+  max-width: 150px; /* ajusta el tamaño según sea necesario */
+  margin: 0 auto; /* centrar el logo horizontalmente */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000; /* asegura que el logo esté encima de otros elementos */
+  background-color: white; /* fondo rojo */
+  padding: 10px 0; /* espacio alrededor del logo */
+}
+
+.container {
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+  margin: 20px auto; /* ajusta según sea necesario */
+}
+
+.pokemon-content {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  margin-top: 80px; /* ajusta según sea necesario para evitar que el contenido se oculte detrás del logo */
+}
+
+/* Resto de tu código CSS ... */
+
+
+.pokemon-selector {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  font-size: 1em;
+}
+
+.pokemon-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.pokemon-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+}
+
+h2 {
+  color: #e8491d;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
